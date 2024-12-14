@@ -17,6 +17,10 @@ lists.forEach((el)=>{
     const card = document.createElement('div')
 })
 
+(function(){
+  return
+})()
+
 
 /*<div class="dessert">
   <div class="image"></div>

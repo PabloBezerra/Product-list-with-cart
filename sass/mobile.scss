@@ -1,33 +1,60 @@
+h1{
+    width: 100%;
+    height: 90px;
+    padding-left: 5%;
+    font-size: 40px;
+    font-weight: 900;
+    color: $Rose900;
+    display: flex;
+    align-items: center;
+}
+
 section.items{
-    width: 400px;
-    height: 400px;
-    background-color: white;
+    width: 100%;
+    height: auto;
+    background-color: $Rose100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
-    div.image{
-        width: auto;
-        height: 200px;
-        background: url('../images/image-baklava-desktop.jpg');
-        border-radius: 10px;
-    }
+    div.dessert{
+        width: 90%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
 
-    div.adCart{
-        width: 50%;
-        height: 30px;
-        background-color: white;
-        color: red;
-        text-align: center;
-        border-radius: 30px;
-    }
+        img{
+            width: 100% ;
+            height: auto;
+            background-color: $Red;
+            border-radius: 10px;
+        }
+        
+        div.adCart{
+            width: 50%;
+            height: 40px;
+            border-radius: 30px;
+            bottom: 20px;
+            position: relative;
+            text-align: center;
+            align-self: center;
+            background-color: $Rose50;
+            color:$Rose900;
+            border: 1px solid $Rose500;
+        }
 
-    p.type{
-        color: gray;
-    }
+        p.type{
+            color: $Rose400;
+        }
 
-    h3{
-        color: black;
-    }
+        h3{
+            color: $Rose900;
+            padding: 5px 0;
+        }
 
-    p.price{
-        color: red;
+        p.price{
+            color: $Red;
+            font-weight: 600;
+        }
     }
 }
