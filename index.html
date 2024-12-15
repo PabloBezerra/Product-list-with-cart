@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">              
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -18,10 +18,13 @@
 
     <section class="items">
 
-      <div class="dessert">
+      <div class="dessert selected">
          <img src="./files/images/image-baklava-mobile.jpg" alt="backlava">
-         <div class="adCart"> Add to Cart
-          
+         <div class="adCart"> 
+          <object class="iconCart" data="files/images/icon-add-to-cart.svg" type="image/svg+xml"></object>
+          <object class="iconMinus" data="files/images/icon-decrement-quantity.svg" type="image/svg+xml"></object>
+          <p>1</p>
+          <object class="iconPlus" data="files/images/icon-increment-quantity.svg" type="image/svg+xml"></object>
          </div>
          <p class="type">Baklava</p>
          <h3>Pistachio Backlava</h3>
@@ -32,7 +35,60 @@
 
   </main>
 
-  <section class="cart">
+  <section class="cart added">
+
+    <h2>You Cart (0)</h2>
+
+    <div class="empty">
+      <img src=".//files/images/illustration-empty-cart.svg" alt="Cart Empty">
+      <p>Your added items will appear here</p>
+    </div>
+
+    <div class="order">
+
+      <div class="list">
+
+        <div class="item"> 
+          <p class="name">Classic Tiramisu</p>
+          <p class="quantity">1x</p>
+          <p class="priceUnitary">@ $5.50</p>
+          <p class="priceGeneral"> $5.50</p>
+          <img src="/files/images/icon-remove-item.svg" alt="Remove item">
+          <hr>
+        </div>
+        <div class="item"> 
+          <p class="name">Classic Tiramisu</p>
+          <p class="quantity">1x</p>
+          <p class="priceUnitary">@ $5.50</p>
+          <p class="priceGeneral"> $5.50</p>
+          <img src="/files/images/icon-remove-item.svg" alt="Remove item">
+          <hr>
+        </div>
+
+      </div>
+
+      <div class="info">
+
+        <p>Order Total</p>
+        <p class="priceTotal"> $0.00</p>
+
+        <div class="neutral">
+          <img src=".//files/images/icon-carbon-neutral.svg" alt="Carbon Neutral">
+          <p>This is a <strong>carbon-neutral</strong> delivery</p>
+        </div>
+      </div>
+
+      <button>Confirm Order</button>
+
+    </div>
+
+  </section>
+
+  <section class="confirmOrder">
+    <img src="/files/images/icon-order-confirmed.svg" alt="Order Confirmed">
+    <h2>Order Confirmed</h2>
+    <p>Enjoed hope you enjoy your food!</p>
+    
 
   </section>
 

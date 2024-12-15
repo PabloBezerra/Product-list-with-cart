@@ -27,6 +27,9 @@ html,body{
     width: 100%;
     min-width: 320px;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: $Rose100;
 }
 
@@ -43,5 +46,3 @@ html,body{
 }
 
 @import 'mobile.scss', 'tablet.scss', 'desktop.scss';
-
-//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

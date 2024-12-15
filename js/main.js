@@ -12,14 +12,14 @@ import { lists } from "./data.js"
 
 // Construindo o cardápio
 
-lists.forEach((el)=>{
-    console.log(el)
-    const card = document.createElement('div')
-})
+// lists.forEach((el)=>{
+//     console.log(el)
+//     const card = document.createElement('div')
+// })
 
-(function(){
-  return
-})()
+// (function(){
+//   return
+// })()
 
 
 /*<div class="dessert">
