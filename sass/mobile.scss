@@ -155,6 +155,8 @@ section.cart{
                 flex-direction: row;
                 flex-wrap: wrap;
                 margin: 10px 0 ;
+                border-bottom: 1px solid $Rose300;
+                padding-bottom: 5px;
                 
                 p.name{
                     flex-basis: 100%;
@@ -189,13 +191,6 @@ section.cart{
                     right: 0;
                     top: 18px;
                     cursor: pointer;
-                }
-                
-                hr{
-                    border-top: none;
-                    border-color: $Rose300;
-                    margin-top: 10px;
-                    flex-basis: 100%;
                 }
             }
         }
@@ -252,4 +247,107 @@ section.cart{
     }
 }
 
-section.
+section.finishOrder{
+    width: 100%;
+    height: auto;
+    max-height: 85vh;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: $Rose50;
+    border-radius: 20px;
+    padding: 20px;
+    bottom: 0;
+    z-index: 1;
+    
+    .infoConfirm{
+        img{
+            width: 50px;
+            margin-top: 10px;
+        }
+        
+        h2{
+            font-size: 40px;
+            color: $Rose900;
+        }
+        
+        p{
+            color: $Rose500;
+            margin-bottom: 20px;
+        }
+    }
+
+    .orderConfirm{
+        width: 100%;
+        height: auto;
+        max-height: 350px;
+        display: flex;
+        flex-direction: column;
+        background-color: $Rose100;
+        border-radius: 10px;
+
+        .listConfirm{
+            width: 100%;
+            height: auto;
+            max-height: 300px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            overflow: auto;
+
+            .itemConfirm{
+                width: 100%;
+                height: 100px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                border-bottom: 1px solid $Rose300;
+                padding: 5px 0;
+
+
+                img{
+                    border-radius: 5px;
+                    height: 70px;
+                    width: 70px;
+                    flex-basis: 20%;
+                }
+
+                .itemInfoConfirm{
+                    display: flex;
+                    flex-basis: 70%;
+                    flex-direction: column;
+                    flex-wrap: wrap;
+                    position: relative;
+
+                    p.nameConfirm{
+                        flex-basis:100%;
+                        font-weight: 500;
+                        color: $Rose900;
+                    }
+                    
+                    p.quantityConfirm{
+                        flex-basis: 20%;
+                        color: $Red;
+                        font-weight: 500;
+                    }
+                    
+                    p.priceUnitaryConfirm{
+                        flex-basis: 80%;
+                    }
+                    
+                    p.priceGeneralConfirm{
+                        position: absolute;
+                        right: 0;
+                        top: 25px;
+                        font-weight: 500;
+                        color: $Rose900;
+
+                    }
+                }
+            }
+        }
+    }
+}
