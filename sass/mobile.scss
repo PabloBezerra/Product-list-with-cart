@@ -286,6 +286,7 @@ section.finishOrder{
         flex-direction: column;
         background-color: $Rose100;
         border-radius: 10px;
+        align-items: center;
 
         .listConfirm{
             width: 100%;
@@ -318,14 +319,16 @@ section.finishOrder{
                 .itemInfoConfirm{
                     display: flex;
                     flex-basis: 70%;
-                    flex-direction: column;
+                    flex-direction: row;
                     flex-wrap: wrap;
+                    justify-content: space-evenly;
                     position: relative;
 
                     p.nameConfirm{
                         flex-basis:100%;
                         font-weight: 500;
                         color: $Rose900;
+                        margin-bottom: 15px;
                     }
                     
                     p.quantityConfirm{
@@ -349,5 +352,35 @@ section.finishOrder{
                 }
             }
         }
+        .infoOrderConfirm{
+            width: 90%;
+            height: auto;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            
+            p{color: $Rose900;}
+
+            p.priceTotalConfirm{
+                font-weight: 900;
+                font-size: 25px;
+            }
+        }
+    }
+
+    button{
+        width: 90%;
+        height: 50px;
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 30px;
+        align-self: center;
+        background-color: $Red;
+        color: $Rose50;
+        font-weight: 500;
+        font-size: 15px;
+        cursor: pointer;
     }
 }
