@@ -15,6 +15,18 @@ $Rose400: hsl(7, 20%, 60%);
 $Rose500: hsl(12, 20%, 44%);
 $Rose900: hsl(14, 65%, 9%);
 
+@mixin desktop{
+    @media screen and (min-width: 1201px) {
+        @content;
+    }
+}
+
+@mixin tablet{
+    @media screen and (min-width: 739px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
 *{
     padding: 0;
     margin: 0;
@@ -34,16 +46,35 @@ main{
     background-color: $Rose100;
 }
 
-@mixin desktop{
-    @media screen and (min-width: 1201px) {
-        @content;
+@include desktop{
+    main{
+        flex-wrap: wrap;
     }
 }
 
-@mixin tablet{
-    @media screen and (min-width: 739px) and (max-width: 1200px) {
-        @content;
-    }
+h1{
+    width: 100%;
+    height: 90px;
+    padding-left: 5%;
+    font-size: 40px;
+    font-weight: 900;
+    color: $Rose900;
+    display: flex;
+    align-items: center;
 }
 
-@import 'mobile.scss', 'tablet.scss', 'desktop.scss';
+.curtain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $Rose900;
+    filter: opacity(.6);
+}
+
+@include tablet{
+    h1{font-size: 60px;}
+}
+
+@import '_sectionDessert.scss', '_sectionCart.scss', '_sectionOrder.scss';
