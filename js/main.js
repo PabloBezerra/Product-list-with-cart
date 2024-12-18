@@ -4,9 +4,13 @@ import { lists } from "./data.js"
 //     response.json().then((dados)=>{
 //         lists = Array.from(dados)
 //     })
-// })))
+// }
 
+window.addEventListener('click',(Event)=>{
+  console.log(Event.target)
+})
 
+console.log()
 // lists.forEach((el)=>{
 //     console.log(el)})
 

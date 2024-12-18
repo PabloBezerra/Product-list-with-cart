@@ -21,7 +21,7 @@ section.items{
     div.dessert{
         width: 90%;
         height: auto;
-        margin: 5px 0;
+        margin: 20px 0;
         display: flex;
         flex-direction: column;
 
@@ -217,7 +217,7 @@ section.cart{
                 display: flex;
                 flex-direction: row;
                 background-color: $Rose100;
-                justify-content: space-evenly;
+                justify-content: center;
                 align-items: center;
                 border-radius: 10px;
                 flex-basis: 100%;
@@ -247,16 +247,26 @@ section.cart{
     }
 }
 
+.curtain{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $Rose900;
+    filter: opacity(.6);
+}
+
 section.finishOrder{
     width: 100%;
     height: auto;
     max-height: 85vh;
-    display: flex;
+    display: none;
     position: absolute;
     flex-direction: column;
     justify-content: space-around;
     background-color: $Rose50;
-    border-radius: 20px;
+    border-radius: 20px 20px 0 0;
     padding: 20px;
     bottom: 0;
     z-index: 1;
@@ -299,9 +309,9 @@ section.finishOrder{
 
             .itemConfirm{
                 width: 100%;
-                height: 100px;
+                height: 70px;
                 display: flex;
-                justify-content: space-between;
+                justify-content: space-around;
                 align-items: center;
                 flex-direction: row;
                 flex-wrap: wrap;
@@ -311,14 +321,14 @@ section.finishOrder{
 
                 img{
                     border-radius: 5px;
-                    height: 70px;
-                    width: 70px;
-                    flex-basis: 20%;
+                    height: 50px;
+                    width: 50px;
+                    flex-basis: 10%;
                 }
 
                 .itemInfoConfirm{
                     display: flex;
-                    flex-basis: 70%;
+                    flex-basis: 75%;
                     flex-direction: row;
                     flex-wrap: wrap;
                     justify-content: space-evenly;
@@ -339,6 +349,7 @@ section.finishOrder{
                     
                     p.priceUnitaryConfirm{
                         flex-basis: 80%;
+                        color: $Rose500
                     }
                     
                     p.priceGeneralConfirm{
@@ -359,6 +370,7 @@ section.finishOrder{
             flex-direction: row;
             justify-content: space-between;
             align-items: center;
+            margin-bottom: 20px;
             
             p{color: $Rose900;}
 
@@ -382,5 +394,9 @@ section.finishOrder{
         font-weight: 500;
         font-size: 15px;
         cursor: pointer;
+    }
+
+    &.active{
+        display: flex;
     }
 }

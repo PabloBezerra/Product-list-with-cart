@@ -23,8 +23,8 @@ $Rose900: hsl(14, 65%, 9%);
     transition: all ease-in-out .5s;
 }
 
-html,body{
-    width: 100%;
+main{
+    width: 100vw;
     min-width: 320px;
     height: auto;
     display: flex;
